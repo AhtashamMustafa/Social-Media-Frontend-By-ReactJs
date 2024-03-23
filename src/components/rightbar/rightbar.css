@@ -38,6 +38,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  z-index: -1;
 }
 .rightbarFriend {
   display: flex;
@@ -48,6 +49,7 @@
 .rightbarProfileImgContainer {
   margin-left: 10px;
   position: relative;
+  z-index: -1;
 }
 .rightbarProfileImg{
     width: 40px;
@@ -112,3 +114,107 @@
   object-fit: cover;
   border-radius: 5px;
 }
+/* Media queries for different devices */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for tablet and smaller devices */
+    .rightbarWrapper {
+      padding: 20px;
+    }
+    
+    .birthdayImg {
+      width: 25px;
+      height: 25px;
+      margin-left: 5px;
+    }
+    
+    .birthdayText {
+      font-size: 13px;
+      margin-left: 5px;
+      margin-top: 8px;
+    }
+    
+    .rightbarProfileImg {
+      width: 30px;
+      height: 30px;
+    }
+    
+    .rightbarOnline {
+      width: 10px !important;
+      height: 10px !important;
+      top: -1px;
+    }
+    
+    .rightbarUsername {
+      font-size: 14px;
+    }
+    
+    .rightbarTitle {
+      font-size: 16px;
+    }
+    
+    .rightbarInfoKey {
+      font-size: 13px;
+      margin-right: 10px;
+    }
+    
+    .rightbarInfoValue {
+      font-size: 13px;
+    }
+    
+    .rightbarFollowingImg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Adjustments for mobile devices */
+    .rightbarWrapper {
+      padding: 15px;
+    }
+    
+    .birthdayImg {
+      width: 20px;
+      height: 20px;
+      margin-left: 3px;
+    }
+    
+    .birthdayText {
+      font-size: 12px;
+      margin-left: 3px;
+      margin-top: 6px;
+    }
+    
+    .rightbarProfileImg {
+      width: 25px;
+      height: 25px;
+    }
+    
+    .rightbarOnline {
+      width: 8px !important;
+      height: 8px !important;
+      top: -1px;
+    }
+    
+    .rightbarUsername {
+      font-size: 12px;
+    }
+    
+    .rightbarTitle {
+      font-size: 14px;
+    }
+    
+    .rightbarInfoKey {
+      font-size: 12px;
+      margin-right: 8px;
+    }
+    
+    .rightbarInfoValue {
+      font-size: 12px;
+    }
+    
+    .rightbarFollowingImg {
+      width: 60px;
+      height: 60px;
+    }
+  }
